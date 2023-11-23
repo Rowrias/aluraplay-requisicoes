@@ -3,7 +3,7 @@ import { conectaApi } from "./conectaApi.js";
 const lista = document.querySelector("[data-lista]");
 
 // cria um elemento <li> na variavel video / <li> recebe a classe = "videos__item" / <li> recebe o "html" dentro
-function constroiCard(titulo, descricao, url, imagem) {
+export default function constroiCard(titulo, descricao, url, imagem) {
     const video = document.createElement("li");
 
     video.className = "videos__item";
@@ -26,7 +26,8 @@ async function listaVideos () {
     const listaApi = await conectaApi.listaVideos();
 
     // para cada listaApi recebe no ultimo da fila dentro da <ul> o constroiCard() 
-    listaApi.forEach(elemento => lista.appendChild(constroiCard(
+    listaApi.forEach(elemento => lista.appendChild(
+        constroiCard(
             elemento.titulo, 
             elemento.descricao, 
             elemento.url, 
