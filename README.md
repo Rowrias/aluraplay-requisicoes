@@ -19,11 +19,11 @@
 ![Screenshot da tela do formulário do AluraPlay](https://imgur.com/ShNADf2.png)
 
 ## Como abrir no vscode:
-# Para instalar o node.js no projeto: 
+### Para instalar o node.js no projeto: 
 * "npm init"
 
-# Para iniciar o servidor no terminal do vscode digite: 
+### Para iniciar o servidor no terminal do vscode digite: 
 * "json-server --watch db.json"
 
-# Se caso o ultimo comando não der certo abra o window powershell como adm e digite:
+### Se caso o ultimo comando não der certo abra o window powershell como adm e digite:
 * "Set-ExecutionPolicy RemoteSigned"
