@@ -26,7 +26,11 @@ async function buscarVideo(evento) {
         )
     ))
 
-    console.log(busca);
+    // Se na busca a lista for zero retorna essa mensagem
+    if (busca.length == 0) {
+        lista.innerHTML = `<h2 class="mensagem__titulo">Não existem vídeo com esse termo</h2>` 
+
+    }
 }
 
 const botaoDePesquisa = document.querySelector("[data-botao-pesquisa]");
