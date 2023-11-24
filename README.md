@@ -20,10 +20,10 @@
 
 ## Como abrir no vscode:
 Para instalar o node.js no projeto: 
-"npm init"
+*"npm init"
 
 Para iniciar o servidor no terminal do vscode digite: 
-"json-server --watch db.json"
+*"json-server --watch db.json"
 
 Se caso o ultimo comando não der certo abra o window powershell como adm e digite:
-"Set-ExecutionPolicy RemoteSigned"
+*"Set-ExecutionPolicy RemoteSigned"
